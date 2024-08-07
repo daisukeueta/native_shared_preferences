@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 31
 
     if (project.android.hasProperty("namespace")) {
         namespace 'yeniellandestoy.native_shared_preferences'
@@ -30,6 +30,7 @@ android {
 
     defaultConfig {
         minSdkVersion 16
+        targetSdkVersion 31
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lint {
